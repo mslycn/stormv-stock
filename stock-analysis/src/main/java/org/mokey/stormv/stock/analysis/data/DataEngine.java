@@ -5,13 +5,20 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import java.util.ArrayList;
+import java.util.Formatter;
 import java.util.List;
 
 public class DataEngine {
 	public static List<StockKData> getStock(String id) {
+		Formatter fmt = new Formatter(System.out);
 		String dataFileName = "";
 		File root = new File("data");
 		File[] fs = root.listFiles();
+		if(fs == null)
+		{
+			fmt.format("[ERROR] not found stock file data in dir:data!\n");
+			return null;
+		}
 		for(int i=0; i<fs.length; i++){
 			if(!fs[i].isDirectory()){
 				if(fs[i].getName().contains(id))

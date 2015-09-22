@@ -66,9 +66,13 @@ public class TestSuccRate {
 			ProfitResult cProfitResult = new ProfitResult();
 			
 			String stockId = stockIdList.get(i);
-			fmt.format("--->Stock Checking: %s\n", stockId);
-			
+		
 			ANLStock cANLStock = ANLStockPool.getANLStock(stockId);
+			if(null == cANLStock)
+			{
+				return;
+			}
+			fmt.format("--->Stock Checking: %s\n", stockId);
 			cProfitResult.id = stockId;
 			int lenlist = cANLStock.historyData.size();
 			if(lenlist < 200)
