@@ -11,6 +11,7 @@
 bin/**
 tmp/**
 tmp/**/*
+.DS_Store
 *.iml
 .idea
 *.tmp

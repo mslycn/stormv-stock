@@ -1,22 +1,17 @@
-="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.mokey.stormv</groupId>
-  <artifactId>stormv-stock</artifactId>
-  <version>1.0.0-SHAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>org.mokey.stormv</groupId>
+    <artifactId>stormv-stock</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-  <name>stock-analysis</name>
-  <url>http://maven.apache.org</url>
-
-  <modules>
-    <module>stock-data</module>
-    <module>stock-analysis</module>
-  </modules>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <modules>
+        <module>stock-data</module>
+        <module>stock-analysis</module>
+    </modules>
 
 </project>
-
