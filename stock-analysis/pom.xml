@@ -12,4 +12,14 @@
     <artifactId>stock-analysis</artifactId>
 
 
+    <build>
+        <resources>
+            <resource>
+                <directory>src/lib</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
 </project>
