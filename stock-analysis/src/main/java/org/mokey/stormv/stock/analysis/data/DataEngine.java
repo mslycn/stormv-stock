@@ -16,7 +16,7 @@ public class DataEngine {
 		File[] fs = root.listFiles();
 		if(fs == null)
 		{
-			fmt.format("[ERROR] not found stock file data in dir:data!\n");
+			fmt.format("[ERROR] not found stock file data [%s] in dir:data\n", id);
 			return null;
 		}
 		for(int i=0; i<fs.length; i++){

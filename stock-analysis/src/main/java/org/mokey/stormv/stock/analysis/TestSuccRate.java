@@ -70,7 +70,7 @@ public class TestSuccRate {
 			ANLStock cANLStock = ANLStockPool.getANLStock(stockId);
 			if(null == cANLStock)
 			{
-				return;
+				continue;
 			}
 			fmt.format("--->Stock Checking: %s\n", stockId);
 			cProfitResult.id = stockId;
