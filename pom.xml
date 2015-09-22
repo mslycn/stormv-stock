@@ -5,7 +5,7 @@
   <groupId>org.mokey.stormv</groupId>
   <artifactId>stormv-stock</artifactId>
   <version>1.0.0-SHAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>stock-analysis</name>
   <url>http://maven.apache.org</url>
