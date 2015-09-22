@@ -1,0 +1,1 @@
+Auto stock transaction interface
